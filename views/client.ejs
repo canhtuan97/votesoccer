@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>WebSosanh.com</title>
+  <link rel="stylesheet" href="./css/css.css">
+  <link rel="stylesheet" href="./css/Thumbnails.css">
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/popper.js" ></script>
+  <script src="./js/jquery.js" ></script>
+  <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/sb-admin-2.min.css" rel="stylesheet">
+  
+ 
+</head>
+
+<body id="page-top">
+<form class="form" action="/bet" method="post">
+  <h1>Betting</h1> Số tiền cho team <%= TeamA %> = <%= b1 %> Số tiền cho team <%= TeamB %> = <%= b2 %>
+  <h3>Address</h3><input type="text" name="address" id="address" value="">
+  <h3>Vote team</h3>
+
+  <select name="team" id="team">
+    <option value="1"><%= TeamA %></option>
+    <option value="2"><%= TeamB %></option>
+  </select>
+  <br>
+  <label for="Số tiền">Số tiền</label>
+  <input type="text" class="form-control subject-list" name="money" id="money" value="">
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
+
+</body>
+
+</html>
